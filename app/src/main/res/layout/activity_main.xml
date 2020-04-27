@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="3pt"
+    android:paddingLeft="3dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -19,12 +19,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        android:layout_marginBottom="3dp"
         android:hint="Nhập tên bạn vào đây" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:text="Ngày sinh:" />
 
     <EditText
@@ -38,6 +40,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:text="Giới tính" />
 
     <RadioGroup
@@ -67,6 +70,7 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:text="Sở thích của bạn:" />
 
     <CheckBox
@@ -103,6 +107,7 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:text="Sở thích khác:" />
 
     <EditText
