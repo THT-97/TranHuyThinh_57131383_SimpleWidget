@@ -54,23 +54,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void Confirm(){
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         String appTxt ="";
         appTxt += edtName.getText() + "\n";
-        appTxt += "Ngày sinh" + sdf.format(edtDoB.getText()) + "\n";
+        appTxt += "Ngày sinh " + edtDoB.getText() + "\n";
         switch (rdgGender.getCheckedRadioButtonId()){
             case (R.id.rbM): appTxt += "Giới tính: Nam" + "\n";
                 break;
             case (R.id.rbF): appTxt += "Giới tính: Nữ" + "\n";
                 break;
         }
-        /*text += "Sở thích: ";
+        appTxt += "Sở thích: ";
         if(chk1.isChecked()) appTxt += chk1.getText() + "; ";
         if(chk2.isChecked()) appTxt += chk2.getText() + "; ";
         if(chk3.isChecked()) appTxt += chk3.getText() + "; ";
         if(chk4.isChecked()) appTxt += chk4.getText() + "; ";
         if(chk5.isChecked()) appTxt += chk5.getText() + "; ";
-        text += edtOther.getText();*/
-        Toast.makeText(getApplicationContext(), appTxt, Toast.LENGTH_SHORT);
+        appTxt += edtOther.getText();
+        Toast.makeText(getApplicationContext(), appTxt, Toast.LENGTH_SHORT).show();
     }
 }
